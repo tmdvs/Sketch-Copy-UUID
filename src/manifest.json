@@ -1,0 +1,38 @@
+{
+  "$schema": "https://raw.githubusercontent.com/BohemianCoding/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "script": "script.js",
+      "name": "Copy document UUID",
+      "handlers": {
+        "run": "copyDocumentUUID"
+      },
+      "identifier": "com.tmdvs.sketch.copyuuid.copydocumentuuid"
+    },
+    {
+      "script": "script.js",
+      "name": "Copy page UUID",
+      "handlers": {
+        "run": "copyPageUUID"
+      },
+      "identifier": "com.tmdvs.sketch.copyuuid.copypageuuid"
+    },
+    {
+      "script": "script.js",
+      "name": "Copy selected layer UUIDs",
+      "handlers": {
+        "run": "copyObjectUUID"
+      },
+      "identifier": "com.tmdvs.sketch.copyuuid.copyselecteduuids"
+    }
+  ],
+  "menu": {
+    "title": "Copy UUID",
+    "items": [
+      "com.tmdvs.sketch.copyuuid.copydocumentuuid",
+      "com.tmdvs.sketch.copyuuid.copypageuuid",
+      "com.tmdvs.sketch.copyuuid.copyselecteduuids"
+    ]
+  }
+}

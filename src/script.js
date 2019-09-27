@@ -1,7 +1,7 @@
 const Document = require('sketch/dom').Document
 const UI = require('sketch/ui')
 
-function copyObjectUUID(context) {
+export function copyObjectUUID(context) {
   const selectedLayers = Document.getSelectedDocument().selectedLayers
   const layerIDs = selectedLayers.map(layer => {
     return layer.id
@@ -12,14 +12,14 @@ function copyObjectUUID(context) {
   UI.message(`Copied ${layerIDs.length} Artboard or Layer UUID(s) 🎉`)
 }
           
-function copyPageUUID(context) {
+export function copyPageUUID(context) {
   const page = Document.getSelectedDocument().selectedPage
 
   copyToClipboard(page.id)
   UI.message(`Copied UUID for page "${page.name}" 🎉`)
 }
 
-function copyDocumentUUID(context) {
+export function copyDocumentUUID(context) {
   const doc = Document.getSelectedDocument()
 
   copyToClipboard(doc.id)
