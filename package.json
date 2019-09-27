@@ -1,12 +1,12 @@
 {
-  "name": "copy-uuids",
+  "name": "copy-uuid",
   "description": "Copy the UUID of selected Pages, Artboards, Symbols, and Layers",
   "version": "0.1.0",
   "engines": {
     "sketch": ">=49.0"
   },
   "skpm": {
-    "name": "Copy UUIDs",
+    "name": "Copy UUID",
     "manifest": "src/manifest.json",
     "main": "copy-uuids.sketchplugin",
     "assets": [
