@@ -2,7 +2,7 @@
 
 ## Installation
 
-- [Download](../../releases/latest/download/..sketchplugin.zip) the latest release of the plugin
+- [Download](../../releases/latest/download/copy-uuids.sketchplugin.zip) the latest release of the plugin
 - Un-zip
 - Double-click on ..sketchplugin
 
