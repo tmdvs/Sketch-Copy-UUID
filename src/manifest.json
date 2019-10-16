@@ -20,7 +20,7 @@
     },
     {
       "script": "script.js",
-      "name": "Copy selected layer UUIDs",
+      "name": "Copy selected layer/artboard UUIDs",
       "handlers": {
         "run": "copyObjectUUID"
       },
