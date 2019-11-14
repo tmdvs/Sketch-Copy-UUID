@@ -4,7 +4,7 @@
   "commands": [
     {
       "script": "script.js",
-      "name": "Copy document UUID",
+      "name": "Current document",
       "handlers": {
         "run": "copyDocumentUUID"
       },
@@ -12,7 +12,7 @@
     },
     {
       "script": "script.js",
-      "name": "Copy page UUID",
+      "name": "Current page",
       "handlers": {
         "run": "copyPageUUID"
       },
@@ -20,11 +20,19 @@
     },
     {
       "script": "script.js",
-      "name": "Copy selected layer/artboard UUIDs",
+      "name": "Selected artboards",
       "handlers": {
-        "run": "copyObjectUUID"
+        "run": "copyArtboardUUIDs"
       },
-      "identifier": "com.tmdvs.sketch.copyuuid.copyselecteduuids"
+      "identifier": "com.tmdvs.sketch.copyuuid.copyartboarduuids"
+    },
+    {
+      "script": "script.js",
+      "name": "Selected layers",
+      "handlers": {
+        "run": "copyLayerUUIDs"
+      },
+      "identifier": "com.tmdvs.sketch.copyuuid.copylayeruuids"
     }
   ],
   "menu": {
@@ -32,7 +40,8 @@
     "items": [
       "com.tmdvs.sketch.copyuuid.copydocumentuuid",
       "com.tmdvs.sketch.copyuuid.copypageuuid",
-      "com.tmdvs.sketch.copyuuid.copyselecteduuids"
+      "com.tmdvs.sketch.copyuuid.copyartboarduuids",
+      "com.tmdvs.sketch.copyuuid.copylayeruuids"
     ]
   }
 }
