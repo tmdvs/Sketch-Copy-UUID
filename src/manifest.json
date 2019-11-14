@@ -4,7 +4,7 @@
   "commands": [
     {
       "script": "script.js",
-      "name": "Current document",
+      "name": "Current Document",
       "handlers": {
         "run": "copyDocumentUUID"
       },
@@ -12,7 +12,7 @@
     },
     {
       "script": "script.js",
-      "name": "Current page",
+      "name": "Current Page",
       "handlers": {
         "run": "copyPageUUID"
       },
@@ -20,7 +20,7 @@
     },
     {
       "script": "script.js",
-      "name": "Selected artboards",
+      "name": "Selected Artboards",
       "handlers": {
         "run": "copyArtboardUUIDs"
       },
@@ -28,7 +28,7 @@
     },
     {
       "script": "script.js",
-      "name": "Selected layers",
+      "name": "Selected Layers",
       "handlers": {
         "run": "copyLayerUUIDs"
       },
