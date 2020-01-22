@@ -5,7 +5,7 @@ const UI = require('sketch/ui')
 export function copyArtboardUUIDs(context) {
   const selected = Document.getSelectedDocument().selectedLayers
   const artboardIds = selected.layers
-    .filter(layer => layer.type =="Artboard")
+    .filter(layer => layer.type =="Artboard" || layer.type == "SymbolMaster")
     .map(layer => layer.id)
 
   if(artboardIds.length > 0) {
@@ -19,7 +19,7 @@ export function copyArtboardUUIDs(context) {
 export function copyLayerUUIDs(context) {
   const selected = Document.getSelectedDocument().selectedLayers
   const layerIds = selected.layers
-    .filter(layer => layer.type !="Artboard")
+    .filter(layer => layer.type !="Artboard" || layer.type !="SymbolMaster")
     .map(layer => layer.id)
 
   if(layerIds.length > 0) {
