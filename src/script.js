@@ -28,6 +28,18 @@ export function copyLayerUUIDs(context) {
     UI.message(`It looks like you haven't selected any layers!`)
   }
 }
+
+export function copySymbolID(context) {
+  const selected = Document.getSelectedDocument().selectedLayers
+  const layerIds = selected.layers
+    .map(layer => layer.symbolId)
+
+  if(layerIds.length > 0) {
+    copyToClipboard(layerIds, "symbol")
+  } else {
+    UI.message(`It looks like you haven't selected anything!`)
+  }
+}
          
 // Copy current page identifier
 export function copyPageUUID(context) {
@@ -48,9 +60,9 @@ const copyToClipboard = (ids = [], type = "") => {
   pasteboard.setString_forType( ids.join(", "), NSPasteboardTypeString );
 
   if(ids.length == 1) {
-    UI.message(`📎  Copied ${type} UUID`)
+    UI.message(`📎  Copied ${type} ID`)
   } else {
-    UI.message(`📎  Copied ${ids.length} ${type} UUIDs`)
+    UI.message(`📎  Copied ${ids.length} ${type} IDs`)
   }
 
 }

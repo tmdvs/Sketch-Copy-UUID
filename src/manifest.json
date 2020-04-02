@@ -33,6 +33,14 @@
         "run": "copyLayerUUIDs"
       },
       "identifier": "com.tmdvs.sketch.copyuuid.copylayeruuids"
+    },
+    {
+      "script": "script.js",
+      "name": "Selected Symbols (Symbol ID)",
+      "handlers": {
+        "run": "copySymbolID"
+      },
+      "identifier": "com.tmdvs.sketch.copyuuid.copysymbolid"
     }
   ],
   "menu": {
@@ -41,7 +49,8 @@
       "com.tmdvs.sketch.copyuuid.copydocumentuuid",
       "com.tmdvs.sketch.copyuuid.copypageuuid",
       "com.tmdvs.sketch.copyuuid.copyartboarduuids",
-      "com.tmdvs.sketch.copyuuid.copylayeruuids"
+      "com.tmdvs.sketch.copyuuid.copylayeruuids",
+      "com.tmdvs.sketch.copyuuid.copysymbolid"
     ]
   }
 }
