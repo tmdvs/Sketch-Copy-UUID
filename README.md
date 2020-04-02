@@ -1,7 +1,7 @@
 # Sketch: Copy UUID
 Easilly copy the UUID of Pages, Artboards, and Layers from within Sketch.
 
-![Copy UUID](http://up.tmdvs.me/67808ea675a3/d)
+![Screen Shot](http://up.tmdvs.me/a3368b8a1abc/d)
 
 **Note:** When copying multiple artboards or layers, ID's will be concatenated with commas.
 
